@@ -24,27 +24,27 @@ public class Calcul {
         this.b = b;
     }
 
-    public float addition ()
+    public float addition (float a, float b)
     {
-        return this.a + this.b;
+        return a + b;
     }
     
-    public float substraction ()
+    public float substraction (float a, float b)
     {
-        return this.a - this.b;
+        return a - b;
     }
     
-    public float multiplication ()
+    public float multiplication (float a, float b)
     {
-        return this.a * this.b;
+        return a * b;
     }
     
-    public float division ()
+    public float division (float a, float b)
     {
-        if (this.b ==0) 
+        if (b ==0) 
         {
-           throw new IllegalArgumentException("Le diviseur ne peut être zéro"); 
+           throw new IllegalArgumentException("Le diviseur ne doit pas être 0"); 
         }
-        return this.a / this.b;
+        return a / b;
     }
 }
